@@ -1,0 +1,9 @@
+world: 'world'
+x1: 0
+y1: 0
+z1: 0
+r: 1
+count: 10
+offset: 0
+particle: 'END_ROD'
+step: 3

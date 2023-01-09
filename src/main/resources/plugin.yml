@@ -1,0 +1,6 @@
+name: InserverTp
+version: '${project.version}'
+main: net.ssgssp.inservertp
+api-version: 1.17
+authors: [ mrsongbyssgs ]
+description: A plugin that can tp the player who join the game
