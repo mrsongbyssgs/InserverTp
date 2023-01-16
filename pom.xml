@@ -6,7 +6,7 @@
 
     <groupId>net.ssgssp</groupId>
     <artifactId>InserverTp</artifactId>
-    <version>1.1</version>
+    <version>1.2-Alpha</version>
     <packaging>jar</packaging>
 
     <name>InserverTp</name>

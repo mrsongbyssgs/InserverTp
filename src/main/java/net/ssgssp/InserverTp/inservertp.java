@@ -1,4 +1,4 @@
-package net.ssgssp;
+package net.ssgssp.InserverTp;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
