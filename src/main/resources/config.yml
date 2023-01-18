@@ -9,4 +9,6 @@ particle: 'END_ROD'
 step: 3
 isPartOn: true
 isComOn: true
+isDelayOn: true
+Delay: 1
 Command: 'help'

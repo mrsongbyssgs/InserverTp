@@ -2,6 +2,7 @@ package net.ssgssp.InserverTp;
 
 
 
+import net.ssgssp.InserverTp.delayModule.Delay;
 import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -32,9 +33,16 @@ public class PlayerJoinEvListener implements Listener {
         int step1 = plug1.getConfig().getInt("step");
         boolean isparton1 = plug1.getConfig().getBoolean("isPartOn");
         boolean iscomon1 = plug1.getConfig().getBoolean("isComOn");
+        boolean isdelayon = plug1.getConfig().getBoolean("isDelayOn");
+        int Delaytimes = plug1.getConfig().getInt("Delay");
         String com1 = Objects.requireNonNull(plug1.getConfig().getString("Command"));
         if(isparton1){
-            InserverTpAPI.drawParticle(step1,r,x1,y1,z1,offset1,part1,player,count1);
+            if(isdelayon){
+                new Delay(step1,r,x1,y1,z1,offset1,part1,player,count1,Delaytimes,plug1).start();
+            }
+            else{
+                InserverTpAPI.drawParticle(step1,r,x1,y1,z1,offset1,part1,player,count1);
+            }
         }
         if(iscomon1){
             Bukkit.dispatchCommand(Bukkit.getConsoleSender(),com1);
