@@ -45,7 +45,7 @@ public class PlayerJoinEvListener implements Listener {
             }
         }
         if(iscomon1){
-            Bukkit.dispatchCommand(Bukkit.getConsoleSender(),com1);
+            InserverTpAPI.disPatchPlayercommand(com1,player);
         }
 
 

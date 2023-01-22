@@ -1,5 +1,6 @@
 package net.ssgssp.InserverTp.api;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.entity.Player;
@@ -14,5 +15,16 @@ public final class InserverTpAPI {
         }
         System.out.println("DRAW DONE");
 
+    }
+    public static void disPatchPlayercommand(String string1,Player player1){
+        int value1 = string1.indexOf("PLAYER");
+        if(value1 != -1){
+            String playername = player1.getName();
+            String string2 = string1.replace("PLAYER",playername);
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(),string2);
+        }
+        else{
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(),string1);
+        }
     }
 }
