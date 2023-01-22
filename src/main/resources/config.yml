@@ -11,4 +11,4 @@ isPartOn: true  //是否开启粒子效果
 isComOn: true  //是否开启指令执行
 isDelayOn: true  //是否开启延迟
 Delay: 1  //延迟时间（秒）
-Command: 'help'   //执行的指令
+Command: 'help'   //执行的指令,其中的PLAYER字段将自动替换为被tp的玩家名
