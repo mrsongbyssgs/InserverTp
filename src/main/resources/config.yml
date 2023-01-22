@@ -1,14 +1,14 @@
-world: 'world'
-x1: 0
-y1: 0
-z1: 0
-r: 1
-count: 10
-offset: 0
-particle: 'END_ROD'
-step: 3
-isPartOn: true
-isComOn: true
-isDelayOn: true
-Delay: 1
-Command: 'help'
+world: 'world'  //世界名,默认为主世界，一般无需修改
+x1: 0   //传送地点X坐标
+y1: 0   //传送地点Y坐标
+z1: 0   //传送地点Z坐标
+r: 1    //粒子效果生成半径
+count: 10   //单个粒子效果生成次数（生成密度）
+offset: 0   //高度偏移设置
+particle: 'END_ROD'  //粒子效果类型
+step: 3   //生成步长
+isPartOn: true  //是否开启粒子效果
+isComOn: true  //是否开启指令执行
+isDelayOn: true  //是否开启延迟
+Delay: 1  //延迟时间（秒）
+Command: 'help'   //执行的指令
